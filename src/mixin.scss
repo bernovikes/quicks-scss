@@ -16,3 +16,18 @@
 @mixin fullScreen() {
   @content;
 }
+
+@mixin Placeholder() {
+  &::placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+}
